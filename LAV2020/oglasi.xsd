@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="TekstOglasa">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="10"/>
+        <xs:maxLength value="180"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="Cena" type="xs:nonNegativeInteger"></xs:element>
+  <xs:element name="Email">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="emailRestrikcija">
+          <xs:attribute name="tip" use="required">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="sluzbeni" />
+                <xs:enumeration value="privatni" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="emailRestrikcija">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\c{5,20}@\c{4,8}.com"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

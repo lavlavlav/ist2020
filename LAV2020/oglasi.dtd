@@ -1,0 +1,16 @@
+﻿
+<!ELEMENT Oglasi (Oglas)>
+<!ELEMENT Oglas (Kategorija, DatumIsteka, Cena, TekstOglasa, OznakaOglasa+, Email)+>
+<!ELEMENT Kategorija (Automobili | Stanovi | Alati | Poducavanje)+>
+<!ELEMENT Automobili (#PCDATA)>
+<!ELEMENT Stanovi (#PCDATA)>
+<!ELEMENT Alati (#PCDATA)>
+<!ELEMENT Poducavanje (#PCDATA)>
+<!ELEMENT DatumIsteka (#PCDATA)>
+<!ELEMENT Cena (#PCDATA)>
+<!ATTLIST Cena valuta CDATA "din">
+
+<!ELEMENT TekstOglasa (#PCDATA)>
+<!ELEMENT OznakaOglasa (#PCDATA)>
+<!ELEMENT Email (#PCDATA)+>
+<!ATTLIST Email tip (privatni|sluzbeni) #REQUIRED>

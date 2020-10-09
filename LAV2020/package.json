@@ -1,0 +1,39 @@
+{
+    "name": "ist2020",
+    "version": "1.0.0",
+    "description": "IST projekat",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mihajilomrsevic/ist2020.git"
+    },
+    "author": "Mihajilo Mrsevic",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mihajilomrsevic/ist2020/issues"
+    },
+    "homepage": "https://github.com/mihajilomrsevic/ist2020#readme",
+    "dependencies": {
+        "decode-uri-component": {
+            "integrity": "sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=",
+            "resolved": "https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.0.tgz",
+            "version": "0.2.0"
+        },
+        "query-string": "^6.13.0",
+        "split-on-first": {
+            "integrity": "sha512-43ZssAJaMusuKWL8sKUBQXHWOpq8d6CfN/u1p4gUzfJkM05C8rxTmYrkIPTXapZpORA6LkkzcUulJ8FqA7Uudw==",
+            "resolved": "https://registry.npmjs.org/split-on-first/-/split-on-first-1.1.0.tgz",
+            "version": "1.1.0"
+        },
+        "strict-uri-encode": {
+            "integrity": "sha1-ucczDHBChi9rFC3CdLvMWGbONUY=",
+            "resolved": "https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz",
+            "version": "2.0.0"
+        },
+        "xmlbuilder": "^15.1.1"
+    }
+}

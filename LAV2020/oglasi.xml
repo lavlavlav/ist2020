@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Oglasi SYSTEM "oglasi.dtd">
+<Oglasi xmlns="http://www.w3schools.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.w3schools.com oglasi.xsd">
+<Oglas>
+  <Kategorija>
+    <Automobili>Audi A4</Automobili>
+  </Kategorija>
+  <DatumIsteka>
+    <Dan></Dan>
+    <Mesec></Mesec>
+    <Godina></Godina>
+  </DatumIsteka>
+  <Cena></Cena>
+  <TekstOglasa></TekstOglasa>
+  <OznakaOglasa></OznakaOglasa>
+  <Email tip="privatni">mmrsevic98@gmail.com</Email>
+</Oglas>
+ 
+</Oglasi>
